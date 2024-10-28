@@ -11,6 +11,9 @@
 
     <!-- Interne CSS voor stijlen -->
     <style>
+      <!--
+B { text-decoration: underline; }
+-->
       body {
         font-family: 'Sora', sans-serif;
         font-size: 18px;
@@ -20,7 +23,7 @@
         font-family: 'Comic Sans MS', sans-serif;
         font-size: 55px;
         color: #8B008B;
-        text-align: center; /* Correctie hier */
+        text-align: center; 
         background-color: transparent;
         padding: 20px;
         border: double 20px;
@@ -46,12 +49,12 @@
         display: block;
         margin: 0 auto;
       }
-  h3 {
+      h3 {
         font-family: 'Roboto', sans-serif;
         font-size: 30px;
         color: #560367;
       }
-     
+
     </style>
 </head>
   
@@ -93,7 +96,7 @@
     <h2>Hoe zou dit in zijn werk gaan?</h2>
     <div class="content-box">
       Ik neem een jurk met vlinders op als voorbeeld maar je kan dit zeker met andere ontwerpen ook uitvoeren.
-     <br> Je hebt meerdere mogelijkheden maar ze vereisen allemaal de vlinder zelf. Het is het handigst om ze te 3D-printen maar als je al gevorderder bent.
+     <br> Je hebt meerdere mogelijkheden maar ze vereisen allemaal de vlinder zelf. Het is het handigst om ze te 3D-printen, maar als je al gevorderder bent.
   
     </div>
     <div class="content-box">
@@ -101,51 +104,45 @@
     </div>
  <h3> 1. Gebruik van een kleine servo of microservo-motor </h3>
     <div class="content-box">
-    Een servo- of microservo-motor kan de vleugels van de vlinder bewegen door middel van een scharniermechanisme.
+    <u> Een servo- of microservo-motor kan de vleugels van de vlinder bewegen door middel van een scharniermechanisme. </u>
 <br>
+<br> <B> Benodigdheden:</B>
+<br>☆ Een kleine servo- of microservo-motor (zoals de SG90)
+<br>☆ Arduino of een andere microcontroller om de motor aan te sturen
+<br>☆ Verbindingsdraden
+<br>☆ Batterij voor voeding
+<br>☆ 3D-geprinte scharnieren of pennen om de vleugels te verbinden met de motor
 <br>
-<strong>Benodigdheden:</strong>
-<br> ☆ Een kleine servo- of microservo-motor (zoals de SG90)
-<br> ☆ Arduino of een andere microcontroller om de motor aan te sturen
-<br> ☆ Verbindingsdraden
-<br> ☆ Batterij voor voeding
-<br> ☆ 3D-geprinte scharnieren of pennen om de vleugels te verbinden met de motor
-<br>
-<br>
-<strong> Hoe het werkt: </strong>
-<br> ☆ Bevestig de vleugels aan scharnieren die met de servo-motor zijn verbonden.
-<br> ☆ Programmeer de Arduino om de servo heen en weer te laten draaien binnen een bepaalde hoek, waardoor de vleugels wapperen.
-<br> ☆ De snelheid van het wapperen kan worden aangepast via de code van de Arduino.
+<br> <B>Hoe het werkt: </B>
+<br>☆ Bevestig de vleugels aan scharnieren die met de servo-motor zijn verbonden.
+<br>☆ Programmeer de Arduino om de servo heen en weer te laten draaien binnen een bepaalde hoek, waardoor de vleugels wapperen.
+<br>☆ De snelheid van het wapperen kan worden aangepast via de code van de Arduino.
     </div>
    <h3> 2. Mechanisch systeem met elastiekjes en veer </h3>
    <div class="content-box">
-   Als je geen elektronica wilt gebruiken, kun je een mechanisch systeem ontwerpen dat de vleugels laat wapperen door middel van elastiekjes of veren die de vleugels in beweging zetten.
+   <u>Als je geen elektronica wilt gebruiken, kun je een mechanisch systeem ontwerpen dat de vleugels laat wapperen door middel van elastiekjes of veren die de vleugels in beweging zetten.</u>
 <br>
+<br> <B> Benodigdheden:</B> 
+<br>☆ Elastiekjes of veertjes
+<br>☆ 3D-geprinte scharnieren aan de basis van de vleugels
+<br>☆ Draaiende schijf of een ander mechanisme dat spanning aan het elastiek toevoegt en weer loslaat, zodat de vleugels kunnen bewegen.
 <br>
-<strong> Benodigdheden:</strong> 
-<br> ☆ Elastiekjes of veertjes
-<br> ☆ 3D-geprinte scharnieren aan de basis van de vleugels
-<br> ☆ Draaiende schijf of een ander mechanisme dat spanning aan het elastiek toevoegt en weer loslaat, zodat de vleugels kunnen bewegen.
-<br>
-<br>
-<strong>Hoe het werkt: </strong>
+<br> <B>Hoe het werkt: </B>
 <br> ☆ De vleugels worden aan scharnieren bevestigd met elastiekjes die hen in een rustpositie houden.
-<br> ☆ Een draaiend mechanisme of een handmatige activatie rekt de elastiekjes uit, waardoor de vleugels omhooggaan en weer terugveren naar hun originele positie.
-<br> ☆ Het mechanische systeem kan met de hand worden aangedreven of door een motor.
+<br>☆ Een draaiend mechanisme of een handmatige activatie rekt de elastiekjes uit, waardoor de vleugels omhooggaan en weer terugveren naar hun originele positie.
+<br>☆ Het mechanische systeem kan met de hand worden aangedreven of door een motor.
    </div>
  <h3> 3. Pneumatisch systeem </h3> 
  <div class="content-box">
- Je kunt ook kleine luchtpompen of blaasbalgen gebruiken om de vleugels door luchtdruk te laten bewegen.
+ <u> Je kunt ook kleine luchtpompen of blaasbalgen gebruiken om de vleugels door luchtdruk te laten bewegen.</u>
 <br>
-<br>
-<strong> Benodigdheden: </strong>
-<br> ☆ Mini-luchtpompen of blaasbalgen
+<br><B> Benodigdheden: </B>
+<br>☆ Mini-luchtpompen of blaasbalgen
 <br> ☆ Luchtbuizen
 <br> ☆ Scharnieren om de vleugels flexibel te maken
 <br> ☆ Ventielen om de luchtstroom te reguleren
-<br>
-<br>
-<strong> Hoe het werkt: </strong>
+<br> 
+<br> <B> Hoe het werkt: </B>
 <br> ☆ De vleugels zijn verbonden met kleine blaasbalgen die worden opgeblazen om de vleugels omhoog te laten gaan.
 <br> ☆ Wanneer de lucht weer ontsnapt, keren de vleugels terug naar hun oorspronkelijke positie.
 <br> ☆ Het systeem kan elektronisch worden aangestuurd om een ritmische beweging te creëren.
@@ -154,16 +151,14 @@
  
  <h3> 4. Elektromagnetisch mechanisme </h3>
   <div class="content-box">
-  Een andere optie is om elektromagneten te gebruiken om een kleine beweging te veroorzaken.
-<br>
-<br>
-<strong> Benodigdheden: </strong>
+  <u> Een andere optie is om elektromagneten te gebruiken om een kleine beweging te veroorzaken.</u>
+<br> 
+<br> <B> Benodigdheden: </B>
 <br> ☆ Kleine elektromagneten
 <br> ☆ Veertjes voor herstelkracht
 <br> ☆ Stalen vleugelbevestigingen
 <br> 
-<br>
-<strong> Hoe het werkt: </strong>
+<br> <B> Hoe het werkt: </B>
 <br> ☆ De elektromagneet trekt aan de stalen bevestiging op de vleugel om de vleugels omhoog te brengen.
 <br> ☆ Een veer trekt de vleugels weer naar beneden wanneer de elektromagneet uitgeschakeld is.
   </div>
